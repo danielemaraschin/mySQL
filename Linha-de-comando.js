@@ -22,4 +22,14 @@ COMANDOS:
 CRIAR NOVO BANCO DE DADOS
     mysql> create database sucos;
 
+SELECIONAR BANCO DE DADOS EXISTENTE:
 
+    mysql> use nomeDB;
+
+/Irá aparecer a msg: database changed
+
+    mysql> select * from nomeDaTabela;
+
+SAIR DO BANCO DE DADOS: DIGITAR EXIT (Maiuscula ou Minuscula)
+
+mysql>EXIT
