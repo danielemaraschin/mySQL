@@ -37,3 +37,11 @@ TEXT - Texto Longo
     TEXT
     MEDIUMTEXT
     LONGTEXT
+
+
+ENUM
+
+Lista pré-definida de valores 
+Somente algum dos valores já definidos
+
+Size ENUM ('macho','femea', 'castrado');
