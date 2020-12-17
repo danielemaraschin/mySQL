@@ -1,7 +1,7 @@
 Campo tipo String 
 Cadeias de caracteres (texto)
 
-CHAR - Cadeia de caracteres com valor fixo (0-255)
+CHAR - Cadeia de caracteres com valor fixo (0-255 caracteres)
     CHAR(4) - "aa" - "  aa" 
         Como está indicado 4 caracteres
          vai completar com espaços vazios
@@ -11,7 +11,7 @@ CHAR - Cadeia de caracteres com valor fixo (0-255)
 
 
 
-VARCHAR - Cadeia de caracteres com valor variado (0-255)
+VARCHAR - Cadeia de caracteres com valor variado (0-255 caracteres)
     VARCHAR(4) - "aa" - "aa"
         Está indicando 4 caracteres mas só está declarado 2
             Será armazenado somente 2.
@@ -44,4 +44,11 @@ ENUM
 Lista pré-definida de valores 
 Somente algum dos valores já definidos
 
-Size ENUM ('macho','femea', 'castrado');
+    EX.: Size ENUM ('macho','femea', 'castrado');
+
+
+
+SET e COLLATE - 
+    Define a cadeia de caracteres quer usar (tipo as tabelas de simbolos)
+    Coloca no campo uma tabela ask ??
+    pra usar quando tem letra russa, alfabeto chines/japones, ...
