@@ -13,3 +13,7 @@ CHAR - Cadeia de caracteres com valor fixo (0-255)
 
 VARCHAR - Cadeia de caracteres com valor variado (0-255)
     VARCHAR(4) - "aa" - "aa"
+        Está indicando 4 caracteres mas só está declarado 2
+            Será armazenado somente 2.
+
+            -Ocupa menos memória;
