@@ -17,3 +17,8 @@ VARCHAR - Cadeia de caracteres com valor variado (0-255)
             Será armazenado somente 2.
 
             -Ocupa menos memória;
+
+
+BINARY -  Cadeia de caracteres com valor fixo (0-255 bytes) expressos em binários.
+
+VARBINARY - Cadeia de caracteres com valor variado (0-255 bytes) expressos em binários.
