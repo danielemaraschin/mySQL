@@ -22,3 +22,18 @@ VARCHAR - Cadeia de caracteres com valor variado (0-255)
 BINARY -  Cadeia de caracteres com valor fixo (0-255 bytes) expressos em binários.
 
 VARBINARY - Cadeia de caracteres com valor variado (0-255 bytes) expressos em binários.
+
+
+BLOB - Binário Longo. Podemos ter:
+
+    TINYBLOB
+    BLOB
+    MEDIUMBLOB
+    LONGBLOB
+
+
+TEXT - Texto Longo
+    TINYTEXT
+    TEXT
+    MEDIUMTEXT
+    LONGTEXT
