@@ -1,6 +1,8 @@
 Campo tipo String 
 Cadeias de caracteres (texto)
 
+Quando declarar o valor colocar entre aspas simples.
+
 CHAR - Cadeia de caracteres com valor fixo (0-255 caracteres)
     CHAR(4) - "aa" - "  aa" 
         Como está indicado 4 caracteres

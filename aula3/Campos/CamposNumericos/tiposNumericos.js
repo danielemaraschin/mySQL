@@ -1,7 +1,3 @@
-Tipos de Dados:
-Colunas da Tabela são os Campos;
-Campos tem tipos e se determinarmos que o campo é do tipo TAL, todaaa aquela coluna será daquele tipo.
-
             /Tipos Numéricos/ 
 
 1) INTEIROS OU DECIMAIS
