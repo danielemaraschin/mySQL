@@ -1,5 +1,9 @@
             /Tipos Numéricos/ 
 
+    Campos Numéricos não precisam de aspas ao declarar o valor;
+    Decimais devem estar separados por ponto( não vírgula)
+
+    
 1) INTEIROS OU DECIMAIS
 
    1.A) Inteiros:
