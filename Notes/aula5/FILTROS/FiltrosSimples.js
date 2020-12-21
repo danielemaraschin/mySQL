@@ -13,10 +13,12 @@ ou
     SELECT * FROM tbcliente WHERE IDADE = 22;
 
 
+
         {MAIOR, MENOR, MENOR OU IGUAL, DIFERENTE}
 
-        A) NÚMEROS
-    
+A) NÚMEROS
+
+
     SELECT * FROM tbcliente WHERE IDADE > 22;
 ou
     SELECT * FROM tbcliente WHERE IDADE < 22;
@@ -31,6 +33,13 @@ ou
         maior ou igual, menor ou igual, igual e diferente
          não se aplica muito bem a campos FLOAT.
 
-        B) TEXTOS
-    => ordem alfabética
+    
+    B) TEXTOS
+        => ordem alfabética
 
+            
+            
+            {BETWEEN AND}
+
+        
+    SELECT * FROM tbproduto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;
