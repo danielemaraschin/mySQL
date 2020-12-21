@@ -17,3 +17,7 @@ WHERE PRODUTO = '544931';
 
 UPDATE tbproduto SET EMBALAGEM = 'Garrafa'
 WHERE PRODUTO = '1078680';
+
+
+b) Alterando  Dado usando filtro sabor  
+UPDATE tbproduto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão';
