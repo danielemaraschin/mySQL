@@ -17,10 +17,12 @@
         -Float: Precisão simples;    
         -Double: arrendondamento mais preciso, mais casas decimais (Precisão dupla)
 
-        por ex.: FLOAT(7,4) = máx 7 antes da virgula e 4. 
+        por ex.: FLOAT(7,4) = máx 7 antes da virgula e 4 dps. 
                                 irá arredondar!
                 999,00009 ====> será armazenado 999,0001;
-    
+            => como o Float arredonda, é mais dificil ele encontrar
+            exatamente um número que tenha muitas casas decimais
+            na hora de usar um filtro pra encontrar valores.
 
         1.B.a)Decimais Fixos:
 -Decimal OU Numeric:
