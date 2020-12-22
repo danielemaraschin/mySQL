@@ -2,16 +2,22 @@
 
     por exemplo:
 
-SELECT * FROM tbcliente WHERE DATA_NASCIMENTO = '1995-01-13';
+1-  SELECT * FROM tbcliente WHERE DATA_NASCIMENTO = '1995-01-13';
 
-SELECT * FROM tbcliente WHERE DATA_NASCIMENTO > '1995-01-13';
 
-SELECT * FROM tbcliente WHERE DATA_NASCIMENTO <= '1995-01-13';
 
+2-  SELECT * FROM tbcliente WHERE DATA_NASCIMENTO > '1995-01-13';       
+        só irá mostrar quem nasceu depois dps.
+
+
+
+3- SELECT * FROM tbcliente WHERE DATA_NASCIMENTO <= '1995-01-13';
+            irá mostrar quem nasceu nessa data e antes.
 
         
-    Mas tbm é possível filtrar pela semana , mes, ano
-                    (através das funções da Data)
+    
+      Também é possível filtrar pela semana , mes, ano
+            (através das funções da Data)
 
 
 SELECT * FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) = 1995;
