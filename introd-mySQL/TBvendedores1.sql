@@ -1,0 +1,14 @@
+USE SUCOS;
+
+CREATE TABLE tbVendedores
+(MATRICULA VARCHAR(5),
+NOME VARCHAR(100),
+PERCENTUAL_COMISSAO float,
+DATA_ADMISSAO DATE,
+DE_FERIAS BIT)
+
+SELECT * FROM tbvendedores where year(DATA_ADMISSAO) < 2016;
+
+SELECT * FROM tbvendedores where year(DATA_ADMISSAO) >= 2016;
+
+SELECT * FROM tbvendedores;
