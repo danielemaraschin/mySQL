@@ -1,0 +1,15 @@
+INDEX
+
+
+ Toda chave primária e chave estrangeira, o MySQL automaticamente cria o índice.
+
+ chave primária:    toda vez que eu for colocar alguém novo na tabela,
+                    o banco de dados vai ter que fazer uma busca primeiro na tabela,
+                    para saber se aquele alguém novo que eu estou colocando já existe
+                    ( índice vai facilitar muito essa busca)
+
+
+chave estrangeira:  Se eu tiver duas tabelas se relacionando entre si e eu vou
+                    e eu vou colocar um registro na tabela filho 
+                    cujo campo tem uma relação de chave estrangeira com a tabela pai,
+                    eu só vou colocar na tabela filho um campo que existe na tabela pai.
