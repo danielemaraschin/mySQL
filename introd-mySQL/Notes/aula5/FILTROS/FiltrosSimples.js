@@ -29,11 +29,21 @@ ou
 <> sinal de diferente, ou seja, todos clientes que não tenham 22 anos
 
 
-        A.1)FLOAT: As condições de maior, menor, 
-        maior ou igual, menor ou igual, igual e diferente
-         não se aplica muito bem a campos FLOAT.
+        A.1)FLOAT: As condições igual, diferente, maior, menor, 
+                    maior ou igual e menor ou igual
+                    não se aplica muito bem a campos FLOAT
+            (pq é ponto flutuante, arredondado...)
 
     
+
+
+        A.1.a) BETWEEN 
+        é o comando usado para filtrar valores através do FLOAT.
+        Se sabe que existe por exemplo um valor 19.50 e quer encontrar ele usar o BETWEEN
+
+        SELECT * FROM tb_prod WHERE PRECO_LISTA between 19.49 AND 19.51;
+
+
     B) TEXTOS
         => ordem alfabética
 
