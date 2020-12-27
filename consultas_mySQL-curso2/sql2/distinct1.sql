@@ -1,0 +1,1 @@
+select distinct bairro from tabela_de_clientes where cidade = 'Rio de Janeiro';
