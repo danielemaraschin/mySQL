@@ -47,6 +47,7 @@ SELECT * FROM nometb
 
 3) Alias / Label / identificador : 'criar' um nome/apelido pro campos
 
+VAR ALIAS = 0;
 SELECT CPF AS CPF_CLIENTE, NOME AS NOME_CLIENTE FROM tbcliente;
 
 irá aparecer em cima dos numeros /texto
