@@ -11,8 +11,11 @@ AVG: MÉDIA
 COUNT: Conta ocorrências (conta o numero de linhas no momento em que agrupa as informacoes)
 
 
-    Sempre que utilizar uma fórmula, deve aplicar uma ALIAS `AS`.
-
+   
+    ->SEM ESPAÇO ENTRE SUM(Y) (SUM E OS PARENTESES)
+    -> VIRGULA ANTES E ,SUM()
+    -> apos sum(), AS labelDadoPesquisado
+    ( Sempre que utilizar uma fórmula, deve aplicar uma ALIAS `AS`)
 
 ex.:
 
@@ -23,6 +26,7 @@ queremos agrupar pelo campo X e somar os valores em y
         ->SEM ESPAÇO ENTRE SUM(Y) (SUM E OS PARENTESES)
         -> VIRGULA ANTES E ,SUM()
         -> apos sum(), AS labelDadoPesquisado
+        -> Sempre que utilizar uma fórmula, deve aplicar uma ALIAS `AS`.
 
 Quando omitimos o campo de agregação, será agregado pra toda tabela e não precisa escrever group by no finally
 
@@ -34,3 +38,15 @@ Quando omitimos o campo de agregação, será agregado pra toda tabela e não pr
 
     
             SELECT ESTADO, SUM(LIMITE_DE_CREDITO) AS LIMITE_TOTAL FROM TABELA
+
+        
+        LIMITE DE CREDITO POR BAIRRO
+            select bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes group by BAIRRO;
+            
+            
+        LIMITE DE CREDITO POR BAIRRO NA CIDADE DO RIO DE Janeiro
+
+        select bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes 
+            where cidade = 'RIO DE JANEIRO' group by BAIRRO;
+        
+            
