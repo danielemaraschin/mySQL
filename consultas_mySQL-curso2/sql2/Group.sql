@@ -12,3 +12,13 @@ select embalagem, count(*) as contador from tabela_de_produtos group by embalage
 
 select bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes group by BAIRRO;
 select bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes where cidade = 'RIO DE JANEIRO' group by BAIRRO;
+
+select ESTADO, bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes  group by BAIRRO, estado;
+select ESTADO, bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes  where cidade = 'Rio de Janeiro' group by BAIRRO, estado;
+
+#ordenado, grupando e filtrando:
+
+select ESTADO, bairro, sum(limite_de_credito) as LIMITE_TOTAL from tabela_de_clientes
+where cidade = 'Rio de Janeiro' 
+group by BAIRRO, estado
+order by bairro;
