@@ -55,4 +55,9 @@ Quando omitimos o campo de agregação, será agregado pra toda tabela e não pr
             where cidade = 'Rio de Janeiro' group by BAIRRO, estado;
         
         -ordenado:
-        
+        select ESTADO, bairro, sum(limite_de_credito) 
+        as LIMITE_TOTAL 
+        from tabela_de_clientes
+        where cidade = 'Rio de Janeiro' 
+        group by BAIRRO, estado
+        order by bairro;
