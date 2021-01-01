@@ -7,3 +7,6 @@ Critério que usa com o Having não precisa ser o mesmo usado após o select (SU
 O HAVING para o GROUP BY é equiparável ao WHERE para o SELECT
     WHERE é usado em contextos mais generalistas.
     HAVING é usado em grupos de resultados. 
+
+
+    SELECT, X, SUM de Y, FROM, TAB GROUP BY 

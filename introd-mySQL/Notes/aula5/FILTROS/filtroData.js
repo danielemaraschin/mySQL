@@ -19,6 +19,8 @@
       Também é possível filtrar pela semana , mes, ano
             (através das funções da Data)
 
+            
+            SELECIONAR SOMENTE O Mes/ Ano do campo data
 
 SELECT * FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) = 1995;
 
