@@ -19,3 +19,8 @@ group by embalagem;
 select embalagem, max(preco_de_lista) as maior_preco,
 min(preco_de_lista) as menor_preco from tabela_de_produtos
 group by embalagem having sum(preco_DE_LISTA) <= 80;
+
+
+SELECT EMBALAGEM, MAX(PRECO_DE_LISTA) AS MAIOR_PRECO,
+MIN(PRECO_DE_LISTA) AS MENOR_PRECO FROM tabela_de_produtos
+GROUP BY EMBALAGEM HAVING SUM(PRECO_DE_LISTA) <= 80 AND MAX(PRECO_DE_LISTA) >= 5;

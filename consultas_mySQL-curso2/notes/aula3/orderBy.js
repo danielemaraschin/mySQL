@@ -57,8 +57,9 @@ EX.:
 
 
 
+quando é ascendente nao precisa colocar os ASC, o normal é ser ascendente;
 
 
+    Quando quer na order descendente ai deve colocar DESC
 
-
-
+SELECT * FROM tabela_de_produtos ORDER BY NOME_DO_PRODUTO DESC;
