@@ -1,5 +1,12 @@
 case = if/else
 
+
+usado mais para classificar os dados da tb 
+-  jovens, velhos, crianças
+- bom, ruim, mediano
+
+
+-> usa WHEN não 'where'
 CASE = CASO tal coisa (condição)
 THEN =pega um tipo de campo;
 
@@ -12,3 +19,16 @@ THEN =pega um tipo de campo;
  WHEN <condição n> THEN < VALORn>
  ELSE valor ELSE
  END
+ AS nome-dessa-classificacao
+ from nomeTB
+
+ EX.: 
+
+select nome, 
+case
+when year(DATA_DE_NASCIMENTO) < 1990 then 'velhos'
+when year(DATA_DE_NASCIMENTO)  >= 1990 and year(DATA_DE_NASCIMENTO) <= 1995 then 'jovens'
+else 'criança' end as IDADE_STATUS from tabela_de_clientes;
+
+
+ 
