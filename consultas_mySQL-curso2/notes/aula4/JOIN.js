@@ -1,6 +1,10 @@
                 JOIN
 
 Possibilidade de unir  uma ou mais tabelas através de campos em comum;
+Os campos no final do comando 
+on a.identificador = b.identificador
+
+não precisam ter o mesmo nome, mas precisam ter o mesmo conteúdo para poderem se ligar
 
             inner JOIN
 
