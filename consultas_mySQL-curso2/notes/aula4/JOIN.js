@@ -23,10 +23,35 @@ Os que nao tem correspondencia, vem o campo da tb esquerda e o que nao tem na di
 
 
             right join
+RETORNA TODOS DA TABELA DA DIREITA E SOMENTE OS correspondentes NA DA DIREITA
 
-Vai fazer o contrário, pegar todos da tb da direita
+Vai fazer o contrário DA LEFT, pegar todos da tb da direita
 da esquerda so vai pegar os que tem correspondentes 
 e o que não tiver correspondencia vai ter um nulo
 
 SELECT A.NOME, B.HOBBY FROM TABELA_eSQUERDA A right JOIN tabela_direita B
 ON A.identificador = B.identificador;
+
+
+                FULL JOIN
+RETORNA TODOS OS REGISTROS DE TODAS AS TABELAS
+Vai pegar todos os dados presentes nas tabelas citadas antes e dps da palavra JOIN
+e os campos sem correspondentes terão NULL como resultado;
+
+SELECT A.NOME, B.HOBBY FROM TABELA_ESQUERDA A 
+FULL JOIN tabela_direita B ON
+A.identificador = b.identificador;
+
+
+
+                    CROSS JOIN
+    Retorna o produto cartesiano de duas tabelas =
+    vai ligar todos os dados de uma tabela com todos os dados da outra.
+
+=> se tem 4 dados na tb da direita e 4 na tb da esquerda, vai resultar numa nova tab de 16 combinações
+
+        SELECT A.NOME, B.HOBBY FROM
+        TABELA_ESQUERDA A, tabela_direita B
+
+    (sem nenhuma condição de união dessas tabelas, ou seja, quando não especificar
+        como que as tabelas se ligam, fará o plano cartesiano das duas tabelss)
