@@ -59,3 +59,19 @@ A.identificador = b.identificador;
 
     (sem nenhuma condição de união dessas tabelas, ou seja, quando não especificar
         como que as tabelas se ligam, fará o plano cartesiano das duas tabelss)
+
+
+
+
+
+EXEMPLO:
+
+SABER FATURAMENTO ANUAL DA EMPRESA (Apresentando todos os anos)
+faturamento: valor x QUANTIDADE
+data: para saber o ano
+
+
+SELECT YEAR(DATA_VENDA), SUM(QUANTIDADE * PRECO) AS FATURAMENTO
+FROM notas_fiscais NF INNER JOIN itens_notas_fiscais INF 
+ON NF.NUMERO = INF.NUMERO
+GROUP BY YEAR(DATA_VENDA)
