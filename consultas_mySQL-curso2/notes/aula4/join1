@@ -1,0 +1,10 @@
+JOIN
+
+SELECT A.CPF, B.CPF FROM tB_CLIENTE A left join tb_nf B 
+    ON A.CPF = B.CPF
+
+No ex acima a.CPF e b.cpf AS LETRAS A e B são as labels (alias) dadas para os campos
+eh possivel colocaR O NOME da tabela ao inves de uma label
+
+Só é obrigado a colocar prefixo/sufixo em campos que são comuns em ambas tabelas.
+Na duvida colocar como prefixo do campo e sufixo do nome da tabela sempre
