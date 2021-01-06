@@ -42,9 +42,13 @@ RETORNA TODOS OS REGISTROS DE TODAS AS TABELAS
 Vai pegar todos os dados presentes nas tabelas citadas antes e dps da palavra JOIN
 e os campos sem correspondentes terão NULL como resultado;
 
-SELECT A.NOME, B.HOBBY FROM TABELA_ESQUERDA A 
-FULL JOIN tabela_direita B ON
-A.identificador = b.identificador;
+
+        SELECT A.NOME, B.HOBBY FROM TABELA_ESQUERDA A 
+        FULL JOIN tabela_direita B ON
+        A.identificador = b.identificador;
+
+
+Porém o mySQL nao aceita FULL JOIN, para fazer esse full join temos que fazer right and left join juntos
 
 
 
@@ -58,9 +62,16 @@ A.identificador = b.identificador;
         TABELA_ESQUERDA A, tabela_direita B
 
     (sem nenhuma condição de união dessas tabelas, ou seja, quando não especificar
-        como que as tabelas se ligam, fará o plano cartesiano das duas tabelss)
+        como que as tabelas se ligam, fará o plano cartesiano das duas tabelas)
+Ou seja:nao precisa escrever o on (que é onde tem os campos iguais)
+        nem o tipo de join, só colocar uma vírgula entre os nomes das tabelas
 
-
+EX.:
+        select tabela_de_vendedores.BAIRRO,
+ tabela_de_vendedores.NOME, 
+ tabela_de_clientes.BAIRRO,
+ tabela_de_clientes.NOME
+ from tabela_de_vendedores , tabela_de_clientes;
 
 
 
