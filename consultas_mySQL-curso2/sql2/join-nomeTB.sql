@@ -48,3 +48,10 @@ select tabela_de_vendedores.BAIRRO,
  tabela_de_clientes.NOME
  from tabela_de_vendedores right join tabela_de_clientes
 on tabela_de_vendedores.BAIRRO = tabela_de_clientes.BAIRRO;
+
+select tabela_de_vendedores.BAIRRO,
+ tabela_de_vendedores.NOME, 
+ tabela_de_clientes.BAIRRO,
+ tabela_de_clientes.NOME
+ from tabela_de_vendedores full join tabela_de_clientes
+on tabela_de_vendedores.BAIRRO = tabela_de_clientes.BAIRRO;
