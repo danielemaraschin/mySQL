@@ -12,3 +12,9 @@ select distinct a.cpf, a.nome, b.cpf from tabela_de_clientes a
 select distinct a.cpf, a.nome, b.cpf from tabela_de_clientes a
 left join notas_fiscais b
  on a.cpf= b.cpf; 
+ 
+ 
+select distinct a.cpf, a.nome, b.cpf from tabela_de_clientes a
+left join notas_fiscais b
+on a.cpf= b.cpf
+where b.cpf is null;
