@@ -13,3 +13,6 @@ in ('TIJUCA', 'JARDINS');
 
 select * from tabela_DE_clientes where bairro
 in (select distinct bairro from tabela_de_vendedores);
+
+select embalagem ,  max(preco_de_lista) from tabela_de_produtos
+group by EMBALAGEM;
