@@ -1,13 +1,13 @@
 --ALTERAR VALORES CONTIDOS NA TABELA\
 
-1)Selecionar tabela :
+--1)Selecionar tabela :
  USE nomeDB
 
 UPDATE nomeTabela SET nomeCampo = 'novoValor', nomeCampo2 = novoValor
 WHERE nomeDoCampoDeChavePrimária = 'valor do item'; (se a identificacao for um numero, sem aspas)
 
 
-exemplo:
+--exemplo:
 
 
 USE SUCOS;
@@ -19,5 +19,5 @@ UPDATE tbproduto SET EMBALAGEM = 'Garrafa'
 WHERE PRODUTO = '1078680';
 
 
-b) Alterando  Dado usando filtro sabor  
+--b) Alterando  Dado usando filtro sabor  
 UPDATE tbproduto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão';
