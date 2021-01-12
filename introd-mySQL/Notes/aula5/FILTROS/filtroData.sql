@@ -1,6 +1,6 @@
-                    FILTRANDO DATAS
+                --    FILTRANDO DATAS
 
-    por exemplo:
+    --por exemplo:
 
 1-  SELECT * FROM tbcliente WHERE DATA_NASCIMENTO = '1995-01-13';
 
@@ -12,15 +12,15 @@
 
 
 3- SELECT * FROM tbcliente WHERE DATA_NASCIMENTO <= '1995-01-13';
-            irá mostrar quem nasceu nessa data e antes.
+  --          irá mostrar quem nasceu nessa data e antes.
 
         
     
-      Também é possível filtrar pela semana , mes, ano
-            (através das funções da Data)
+  --    Também é possível filtrar pela semana , mes, ano
+ --           (através das funções da Data)
 
             
-            SELECIONAR SOMENTE O Mes/ Ano do campo data
+ --           SELECIONAR SOMENTE O Mes/ Ano do campo data
 
 SELECT * FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) = 1995;
 
