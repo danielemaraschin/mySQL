@@ -4,7 +4,7 @@ Consultando Dados da TABELA
 SELECT * FROM nometb
  o asterisco quer dizer = 'todos os campos'
 
-    Se quiser apenas dois campos ( por exemplo nome):
+    Se quiser apenas dois campos ( por exemplo nome e matricula):
 
             select NOME, MATRICULA from tbvendedores;
 
