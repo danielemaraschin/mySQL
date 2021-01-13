@@ -44,12 +44,12 @@ ou
         SELECT * FROM tb_prod WHERE PRECO_LISTA between 19.49 AND 19.51;
 
 
-    B) TEXTOS
+ --   B) TEXTOS
         => ordem alfabética
 
             
             
-            {BETWEEN AND}
+ --           {BETWEEN AND}
 
         
     SELECT * FROM tbproduto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;
