@@ -1,5 +1,5 @@
 
-#ordenado, grupando e filtrando:
+--ordenado, grupando e filtrando:
 
      select ESTADO, bairro, sum(limite_de_credito) 
       as LIMITE_TOTAL 
