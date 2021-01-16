@@ -30,7 +30,7 @@
  --                   então colocar 2 se quer apartir do terceiro.
 
 
----EX.:
+--EX.:
                 
  --   1) Seleciona as 10 primeiras vendas
         select data_venda from notas_fiscais limit 10;
