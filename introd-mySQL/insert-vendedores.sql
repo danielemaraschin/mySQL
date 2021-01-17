@@ -8,4 +8,4 @@ INSERT INTO tabela_de_vendedores
  VALUES
  ('00236', 'Cláudia Morais', 0.8);
  
- SELECT * FROM tabela_de_vendedores;tabela_de_vendedores
+ SELECT * FROM tabela_de_vendedores;
