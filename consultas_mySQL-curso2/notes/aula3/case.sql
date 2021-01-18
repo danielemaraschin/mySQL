@@ -17,10 +17,9 @@
 --WHEN <condição 2> THEN < VALOR2>
 --(...)
 --WHEN <condição n> THEN < VALORn>
---ELSE valor ELSE
---END
---AS nome-dessa-classificacao
---from nomeTB
+--ELSE valorELSE
+--END AS nome-dessa-classificacao
+--from nomeTB;
 
 -- EX.: 
 
