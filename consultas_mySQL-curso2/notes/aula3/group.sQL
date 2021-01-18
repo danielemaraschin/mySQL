@@ -1,4 +1,4 @@
- --           Group
+ --           Group by
 --Juntar elementos da tabela apresentando um resultado
 
 --Apresenta o resultado agrupando valores numéricos
