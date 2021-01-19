@@ -8,7 +8,7 @@
 --
 --            inner JOIN
 
-    SELECT A.NOME, B HOBBY FROM TABELA_ESQUERDA A (está dando um as label, um nome pra tab da esq que é onde tem o campo nome)
+    SELECT A.NOME, B HOBBY FROM TABELA_ESQUERDA A  --(esse A é que está dando um as label, um nome pra tab da esq que é onde tem o campo nome)
     inner join tabela_direita b
     on a.identificador = b.identificador
 
@@ -48,7 +48,7 @@ ON A.identificador = B.identificador;
         A.identificador = b.identificador;
 --
 --
---Porém o mySQL nao aceita FULL JOIN, para fazer esse full join temos que fazer right and left join juntos
+--Porém o mySQL nao aceita FULL JOIN, para fazer esse full join acima temos que fazer right and left join juntos
 --
 --
 --
