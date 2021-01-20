@@ -33,6 +33,6 @@ on tabela_de_vendedores.BAIRRO = tabela_de_clientes.BAIRRO;
 
 
 --UNION ALL
---
+
 --Coloca todos os dados de todas as tabelas;
 --Se algumas informações se repetirem, elas irão aparecer (REPETIR) conforme o numero que aparecem nas tabelas

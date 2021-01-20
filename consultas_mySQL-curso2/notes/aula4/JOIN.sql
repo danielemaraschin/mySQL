@@ -48,8 +48,24 @@ ON A.identificador = B.identificador;
         A.identificador = b.identificador;
 --
 --
---Porém o mySQL nao aceita FULL JOIN, para fazer esse full join acima temos que fazer right and left join juntos
---
+--Porém o mySQL nao aceita FULL JOIN, para fazer esse full join acima temos que fazer right and left join juntos 
+-- com o UNION entre as duas
+
+select tabela_de_vendedores.BAIRRO,
+ tabela_de_vendedores.NOME, 
+ DE_FERIAS,
+ tabela_de_clientes.BAIRRO,
+ tabela_de_clientes.NOME
+ from tabela_de_vendedores right join tabela_de_clientes
+on tabela_de_vendedores.BAIRRO = tabela_de_clientes.BAIRRO
+union
+select tabela_de_vendedores.BAIRRO,
+ tabela_de_vendedores.NOME, 
+ DE_FERIAS,
+ tabela_de_clientes.BAIRRO,
+ tabela_de_clientes.NOME
+ from tabela_de_vendedores left join tabela_de_clientes
+on tabela_de_vendedores.BAIRRO = tabela_de_clientes.BAIRRO;
 --
 --
 --                    CROSS JOIN
