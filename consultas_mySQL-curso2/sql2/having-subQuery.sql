@@ -7,8 +7,14 @@
   
   #usando sub-consultas
   
-  select x.cpf, x.numero_vendas from 
-(select cpf ,  count(*) as numero_vendas from notas_fiscais
+select x.cpf, x.contador from 
+(select cpf ,  count(*) as contador from notas_fiscais
 where year(data_venda) = 2016
 group by cpf) x 
-where x.numero_vendas > 2000;
+where x.contador > 2000;
+
+
+SELECT X.CPF, X.CONTADOR FROM 
+(SELECT CPF, COUNT(*) AS CONTADOR FROM notas_fiscais
+WHERE YEAR(DATA_VENDA) = 2016
+GROUP BY CPF) X WHERE X.CONTADOR > 2000
