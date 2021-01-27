@@ -22,7 +22,10 @@ select NF.CPF, date_format(NF.DATA_VENDA, '%Y - %m ') as mes_ano, INF.QUANTIDADE
 INNER JOIN itens_notas_fiscais inf
 on nf.numero = inf.numero;
 
+#CONSULTA VENDA POR CLIENTE POR MES
 #agora devemos agrupar e somar pq está aparecendo mais de uma venda pro mesmo cliente no mesmo dia
+#ao agruparmos pela data, como ela é uma função, copiar toda a função sem a label
+
 select NF.CPF, date_format(NF.DATA_VENDA, '%Y - %m ') as mes_ano, sum(INF.QUANTIDADE) as quantidade_vendas
 from notas_fiscais NF
 INNER JOIN itens_notas_fiscais inf
